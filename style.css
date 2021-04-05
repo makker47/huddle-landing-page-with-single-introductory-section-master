@@ -74,7 +74,7 @@ h2 {
   opacity: 0.9;
 }
 
-p {
+.text p {
   max-width: 500px;
   margin-bottom: 30px;
   opacity: 0.9;
