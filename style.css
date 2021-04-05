@@ -153,6 +153,7 @@ footer {
   margin-top: auto;
   height: 40px;
   background: hsl(294, 9%, 21%);
+  
 }
 
 .attribution { 
@@ -257,10 +258,12 @@ footer {
   
   h2 {
     font-size: 24px;
+    max-width: 300px;
   }
 
-  p{
+  .text p{
     font-size: 14px;
+    max-width: 290px;
   }
 
   
