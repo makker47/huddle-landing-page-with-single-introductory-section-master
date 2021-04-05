@@ -17,76 +17,76 @@ body {
   
   font-family: 'Poppins', sans-serif;
   background: var(--Violet);
-  background-image: url(images/bg-mobile.svg);
+  background-image: url(images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  
-  
-  
-  
-  
+    
 }
 
 main {
- min-height: 100vh;
-  margin: 20px 20px 0 20px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+  margin: 10px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
+
+.images {
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  
+  
+  
+  flex-direction: column;
+  margin-right: 40px;
+  
+}
+
+.mob-desk { 
+  width: 100%;
+  min-width: 500px;
+  max-width: 700px; 
+}
+
+
 
 .logo {
-  height: 35px;
-  width: 200px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-  
-}
-
-.mob-desk {
-  height: 210px;
-  width: 400px;
-  
-  background-image: url(images/illustration-mockups.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-  
+  width: 30%;
+  margin-right: 440px;
   margin-bottom: 50px;
 }
 
-h2, p {
-  color: aliceblue;
+h2,p {
+  color: white;
 }
 
 h2 {
-  text-align: center;
-  width: 300px;
-  margin-bottom: 10px;
-}
-
-.text p{
-  text-align: center;
-  width: 330px;
+  font-size: 34px;
   margin-bottom: 20px;
+  max-width: 400px;
+  opacity: 0.9;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+p {
+  max-width: 500px;
+  margin-bottom: 30px;
+  opacity: 0.9;
 }
 
 button {
   cursor: pointer;
-  padding: 10px 70px;
+  padding: 15px 70px;
   border-radius: 20px;
   color: var(--Violet);
   border: none;
-  margin-bottom: 50px;
+  width: 200px;
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.02),
   0 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -107,6 +107,14 @@ background: var(--Soft-Magenta);
 
 }
 
+.text {
+  padding-top: 80px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
 
 li:hover .icon {
   fill: var(--Soft-Magenta);
@@ -121,9 +129,13 @@ li:hover .icon {
 ul {
   display: flex;
   list-style-type: none;
-  margin-bottom: 50px; 
-  justify-content: center;
+  margin-bottom: 50px;
+  position: relative;
+  left: 370px;
+  top: 220px;
+  
 }
+
 
 
 li:nth-child(1) {
@@ -135,8 +147,9 @@ li:nth-child(2) {
 }
 
 footer {  
-  
+  z-index: 1;
   display: flex;
+  justify-content: center;
   margin-top: auto;
   height: 40px;
   background: hsl(294, 9%, 21%);
@@ -179,79 +192,102 @@ footer {
   transform-origin: center; 
 }
 
-@media only screen and (max-width: 320px) {
-  .attribution { 
-    font-size: 10px;  
-  }
-  .text p {
-    
-    width: unset;
-  }
-}
 
 
-@media only screen and (min-width: 1200px) {
+@media screen and (max-width: 1160px) {
   body {
-    
-    background-image: url(images/bg-desktop.svg);
+    background-image: url(images/bg-mobile.svg);
     background-size: cover;
     
     
-    
-    
   }
-  .mob-desk {
-    margin-bottom: 0;
-   height: 400px;
-   width: 590px;
-   
-    
-  }
-
-  .text {  
-  margin-left: 40px;
-  justify-content: unset;
-    align-items: unset;
-    margin-top: 270px;
-  }
-
-  h2 {
-    width: unset;
-    text-align: left;
-    font-size: 40px;
-    width: 490px;
-  }
-
   .logo {
-    height: 50px;
-    margin: unset;
-    margin-bottom: 50px;
-
+    display: unset;
+    width: 100%;
+    margin-right: unset;
+    margin-top: 50px;
+    
+    max-width: 150px;
+    
     
   }
 
- 
+  main{
+    flex-direction: column;
+  }
 
-  .text p{  
-    text-align: left;
-    min-width: 490px;
-    }
+  
 
-  main {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .images {
+    display: unset;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 40px;
+    margin-right: unset;
     
+    
+  }
+
+  .mob-desk {
+    
+    width: 100%;
+    min-width: 280px;
+    max-width: 700px;
+  }
+
+  .text {
+    min-width: 100px;
+    padding-top: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  button {
+    margin-bottom: 60px;
+  }
+
+  .text h2, p {
+    text-align: center;
   }
   
-  button {
-    width: 180px;
-    height: 50px;
+  h2 {
+    font-size: 24px;
   }
 
-  ul {
-    justify-content: unset;
-   margin-left: 400px;
-  margin-top: 150px;
-  margin-bottom: unset;
+  p{
+    font-size: 14px;
   }
+
+  
+
+  ul {
+    
+  align-items: center;
+  justify-content: center;
+  
+  margin-bottom: unset;
+  position: unset;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  body {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .attribution { 
+    font-size: 10px;    
+}
+
 }
